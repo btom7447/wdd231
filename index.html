@@ -1,11 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Documents</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 – Course Home Page by Benjamin Tom. This assignment is meant to demonstrate my knowledge of applying HTML, CSS and JavaScript to design a home page.">
+    <meta name="author" content="Benjamin Tom">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="stylesheet" href="./styles/small.css">
+    <script src="./scripts/getdates.js" defer></script>
+    <script src="./scripts/hamburger.js" defer></script>
+    <script src="./scripts/certificate.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>WDD 231 - Benjamin Tom</title>
 </head>
 <body>
-    
+    <header>
+        <div class="top-header">
+            <img src="./images/benjamin-tom.jpg" alt="profile picture of Benjamin Tom">
+            <h1>Benjamin J. Tom</h1>
+            <button id="hamburger-menu" aria-label="Toggle navigation">
+                <span class="hamburger-icon">&#9776;</span>
+            </button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="https://github.com/btom7447" target="_blank">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/benjamin-tom-1820b9240/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Home<h2>
+        <section class="course-work-grid">
+            <div class="card about-me">
+                <div class="card-heading">
+                    <h2>Course Work</h2>
+                </div>
+                <div class="card-content">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React JS</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card web-resources">
+                <div class="card-heading">
+                    <h2>Akwa Ibom, Nigeria</h2>
+                </div>
+                <div class="card-content">
+                    <img src="./images/akwa-ibom-flag.jpeg" alt="Official flag of Akwa Ibom" class="flag">
+                    <p>Official flag of Akwa Ibom </p>
+                </div>
+            </div>
+        </section>
+        <section class="card certificates">
+            <div class="card-heading">
+                <h2>Web and Computer Programming Certificate</h2>
+            </div>
+            <div class="certificate-buttons">
+                <button type="button" class="all-btn">
+                    All
+                </button>
+                <button type="button" class="cse-btn">
+                    CSE
+                </button>
+                <button type="button" class="wdd-btn">
+                    WDD
+                </button>
+            </div>
+            <div class="certificate-grid"></div>
+            <!-- Dynamically populate certificate grid with grid items -->
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 
+            <span id="currentyear"></span>
+            Benjamin Tom
+            Nigeria
+        </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>

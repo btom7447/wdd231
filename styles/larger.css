@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease;
+}
+
+:root {
+    --white: #fff;
+    --p-background: #162051;
+    --s-background: #50577b;
+    --highlight: #42b9e5;
+    --black: #000;
+    --ash: #d9d9d9;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+header .top-header {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--p-background);
+}
+header .top-header img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+}
+header .top-header h1 {
+    color: var(--white);
+    font-weight: 700;
+    line-height: 50.1px;
+    font-size: 40px;
+    font-family: 'Figtree', sans-serif;
+    text-align: center;
+}
+#hamburger-menu {
+    display: none; 
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 24px;
+    cursor: pointer;
+}
+header nav {
+    background-color: var(--s-background);
+    padding: 10px 20px;
+}
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;
+}
+header ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24.4px;
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+header ul li a:hover {
+    color: var(--highlight);
+}
+header ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--highlight);
+    transition: width 0.3s ease;
+}
+header ul li a:hover::after {
+    width: 100%;
+}
+
+/* MAIN */
+main {
+    width: 100%;
+    margin-top: 170px;
+    padding: 30px;
+}
+.course-work-grid {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+.course-work-grid .card {
+    border-radius: 7px;
+    border: solid 1px var(--p-background);
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.card .card-heading {
+    padding: 10px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: var(--p-background);
+}
+.card .card-heading h2 {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Figtree', sans-serif;
+    text-align: center;
+}
+.card .card-content {
+    padding: 20px;
+    height: 100%;
+    justify-self: start;
+    align-self: stretch;
+}
+.card-content li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24.4px;
+    color: var(--black);
+    margin-left: 20px;
+}
+main .card-content .flag {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* CERTIFICATE SECTION */
+.certificate-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.certificate-buttons button {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--p-background);
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.certificate-buttons button.active {
+    background-color: var(--highlight);
+}
+.certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 30px 0px
+}
+.certificate-grid .certificate {
+    padding: 40px;
+    border-radius: 7px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: var(--white);
+    border: solid 1px var(--p-background);
+    color: var(--p-background);
+}
+.certificate-grid .certificate.active {
+    display: block;
+}
+.certificate-grid .certificate.completed {
+    background-color: var(--s-background);
+    border: solid 1px var(--s-background);
+    color: var(--white);
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--p-background);
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24.4px;
+    color: var(--white);
+}
