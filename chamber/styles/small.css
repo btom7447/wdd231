@@ -1,5 +1,56 @@
 @media screen and (max-width: 450px) {
 
-    
+    :root {
+        --white: #fff;
+        --p-background: #745332;
+        --s-background: #4C5154;
+        --highlight: #F1C40F;
+        --black: #000;
+        --ash: #d9d9d9;
+    }
+
+    /* HEADER */
+    header {
+        padding: 10px 20px;
+    }
+    header nav {
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        display: none; 
+        flex-direction: column;
+        align-items: stretch;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: var(--white) !important;
+        color: var(--p-background) !important;
+    }
+    header nav ul {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 10px;
+    }
+    header nav.open {
+        display: flex; 
+    }
+    /* HAMBURGER MENU */
+    #hamburger-menu {
+        display: block; 
+    }
+
+    /* HERO SECTION */
+    .hero-section {
+        height: 50dvh;
+    }
+
+    /* Home Section */
+    .home-section {
+        padding: 30px 20px;
+    }
+    .home-section .home-top {
+        grid-template-columns: 1fr;
+    }
 
 }

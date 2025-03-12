@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Tech Innovators",
+        "address": "123 Innovation Drive, Uyo",
+        "phone": "+234 123 456 7890",
+        "website": "https://techinnovators.com",
+        "image": "logo-member-one.jpg",
+        "membershipLevel": 3,
+        "email": "info@techinnovators.com"
+    },
+    {
+        "name": "Green Energy Solutions",
+        "address": "456 Eco Road, Eket",
+        "phone": "+234 234 567 8901",
+        "website": "https://greenenergy.com",
+        "image": "logo-member-two.jpg",
+        "membershipLevel": 2,
+        "email": "contact@greenenergy.com"
+    },
+    {
+        "name": "Agro Farms Ltd",
+        "address": "789 Farm Lane, Ikot Ekpene",
+        "phone": "+234 345 678 9012",
+        "website": "https://agrofarms.com",
+        "image": "logo-member-three.jpg",
+        "membershipLevel": 1,
+        "email": "support@agrofarms.com"
+    },
+    {
+        "name": "Blue Ocean Logistics",
+        "address": "101 Marina Way, Oron",
+        "phone": "+234 456 789 0123",
+        "website": "https://blueoceanlogistics.com",
+        "image": "logo-member-four.jpg",
+        "membershipLevel": 3,
+        "email": "info@blueoceanlogistics.com"
+    },
+    {
+        "name": "Golden Health Services",
+        "address": "202 Wellness Street, Abak",
+        "phone": "+234 567 890 1234",
+        "website": "https://goldenhealth.com",
+        "image": "logo-member-five.jpg",
+        "membershipLevel": 2,
+        "email": "hello@goldenhealth.com"
+    },
+    {
+        "name": "Smart Builders Inc",
+        "address": "303 Construction Avenue, Itu",
+        "phone": "+234 678 901 2345",
+        "website": "https://smartbuilders.com",
+        "image": "logo-member-six.jpg",
+        "membershipLevel": 1,
+        "email": "build@smartbuilders.com"
+    },
+    {
+        "name": "Creative Minds Agency",
+        "address": "404 Art Lane, Ikot Abasi",
+        "phone": "+234 789 012 3456",
+        "website": "https://creativeminds.com",
+        "image": "logo-member-seven.jpg",
+        "membershipLevel": 3,
+        "email": "create@creativeminds.com"
+    }
+]
