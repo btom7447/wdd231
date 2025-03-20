@@ -14,8 +14,8 @@
     <script src="./scripts/header.js" defer></script>
     <script src="./scripts/hamburger.js" defer></script>
     <script src="./scripts/getdates.js" defer></script>
-    <script src="./scripts/directory.js" defer></script>
     <script src="./scripts/weather.js" defer></script>
+    <script src="./scripts/spotlight.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/c21cfe5a09.js" crossorigin="anonymous"></script>
@@ -36,7 +36,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="directory.html">Directory</a></li>
-                    <li><a href="#">Join</a></li>
+                    <li><a href="join.html">Join</a></li>
                     <li><a href="#">Discover</a></li>
                 </ul>
             </nav>
@@ -46,57 +46,50 @@
             </button>
         </header>
         <section class="hero-section">
-            <button type="button" class="keynote-btn">
-                Keynote Tickets
-            </button>
+           
+                <button type="button" class="keynote-btn">
+                    <a href="join.html">
+                        Join Us
+                    </a>
+                </button>
+            
         </section>
-        <section class="home-section">
-            <h4 class="title">Home</h4>
-            <div class="home-top">
-                <!-- Event Card -->
-                <div class="home-card events">
-                    <div class="card-header">
-                        <h6>Events</h6>
-                    </div>
-                    <div class="card-content">
-
-                    </div>
+        <section class="spotlight-section">
+            <h3>Current Events</h3>
+            <div class="member-card-container">
+                <div class="event-card">
+                    <h4>Business Networking Night</h4>
+                    <p>Date: October 15, 2023</p>
+                    <p>Time: 6:00 PM - 9:00 PM</p>
+                    <p>Location: Akwa Ibom Civic Center</p>
+                    <p>Description: Join us for an evening of networking with local business leaders and entrepreneurs. Refreshments will be provided.</p>
                 </div>
-               <!-- Current Weather Card -->
-                <div class="home-card current-weather">
-                    <div class="card-header">
-                        <h6>Current Weather</h6>
-                    </div>
-                    <div class="card-content">
-                        <div class="forecast-item">
-                            <div id="weather-icon"></div>
-                            <p id="temperature"></p>
-                            <p id="weather-description"></p>
-                        </div>
-                    </div>
+                <div class="event-card">
+                    <h4>Small Business Workshop</h4>
+                    <p>Date: October 20, 2023</p>
+                    <p>Time: 10:00 AM - 2:00 PM</p>
+                    <p>Location: Chamber Conference Hall</p>
+                    <p>Description: Learn essential skills for growing your small business, including marketing strategies and financial planning.</p>
                 </div>
-
-                <!-- Weather Forecast Card -->
-                <div class="home-card forecast">
-                    <div class="card-header">
-                        <h6>Weather Forecast</h6>
-                    </div>
-                    <div class="card-content" id="forecast-container">
-                        <!-- Forecast data will be inserted here -->
-                    </div>
+                <div class="event-card">
+                    <h4>Annual Gala Dinner</h4>
+                    <p>Date: November 5, 2023</p>
+                    <p>Time: 7:00 PM - 11:00 PM</p>
+                    <p>Location: Grand Hotel Ballroom</p>
+                    <p>Description: Celebrate the achievements of our local business community at our annual gala dinner. Formal attire required.</p>
                 </div>
             </div>
-            <div class="view-toggle">
-                <button id="grid-view-btn" title="Grid View">
-                    <i class="fas fa-th-large"></i> 
-                </button>
-                <button id="list-view-btn" title="List View">
-                    <i class="fas fa-list"></i> 
-                </button>
-            </div>
-            <div class="member-card-container" id="member-container"></div>
+        </section>
+        <section class="weather-section">
+            <h3>Weather Section </h3>
+            <div id="forecast-container"></div>
+        </section>
+        <section class="spotlight-section">
+            <h3>Spotlight</h3>
+            <div class="spotlight-container member-card-container"></div>
         </section>
     </main>
+
     <footer>
         <div class="footer-left">
             <h6>Akwa Ibom Chamber of Commerce</h6>

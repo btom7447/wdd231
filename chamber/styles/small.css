@@ -53,4 +53,14 @@
         grid-template-columns: 1fr;
     }
 
+    /* SPOTLIGHT CONTAINER */
+    .spotlight-section {
+        padding: 40px 20px;
+    }
+    .spotlight-section h3 {
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Figtree', sans-serif;
+        margin-bottom: 30px;
+    }
 }
