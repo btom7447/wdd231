@@ -624,57 +624,91 @@ footer a:hover {
 }
 
 /* MODAL */
-/* MODAL STYLES */
+/* MODAL STYLES - ENHANCED */
 dialog {
-    border: 1px solid var(--ash);
-    border-radius: 4px;
-    padding: 50px;
-    max-width: 400px;
-    min-height: 200px;
+    border: none;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 90%;
+    width: 500px;
+    min-height: auto;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 50%;
-    left: 50%;
+    top: 20%;
+    left: 30%;
     transform: translate(-50%, -50%);
     z-index: 1000;
+    background-color: var(--white);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+dialog[open] {
+    opacity: 1;
 }
 
 dialog::backdrop {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(2px);
+    transition: background-color 0.3s ease;
+}
+
+dialog h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--p-background);
+    text-align: center;
+}
+
+dialog p {
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 1.6;
 }
 
 dialog button {
     background-color: var(--p-background);
     color: var(--white);
     border: none;
-    padding: 12px 30px;
+    padding: 0.75rem 1.5rem;
     border-radius: 4px;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 24.4px;
-    margin-top: 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
 }
 
 dialog button:hover {
-    background-color: var(--p-background-hover);
+    background-color: var(--s-background);
+}
+
+/* Modal content animation */
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+dialog[open] {
+    animation: modalFadeIn 0.3s ease forwards;
 }
 
 /* Prevent body scrolling when modal is open */
-body.modal-open {
+/* body.modal-open {
     overflow: hidden;
-}
+} */
 
 /* THANK YOU SECTION */
 .thank-you-section {

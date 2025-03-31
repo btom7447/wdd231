@@ -84,6 +84,9 @@
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
 
+    dialog {
+        left: 50%;
+    }
     /* * {
         outline: red solid 1px;
     } */
