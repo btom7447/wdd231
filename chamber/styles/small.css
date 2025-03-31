@@ -63,4 +63,28 @@
         font-family: 'Figtree', sans-serif;
         margin-bottom: 30px;
     }
+
+    /* JOIN US  */
+    .form-container {
+        padding: 50px 20px;
+    }
+    .form-container form {
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
+    .form-container fieldset {
+        padding: 30px;
+    }
+
+    /* MEMBERSHIP CARD SECTION */
+    .membership-card-section {
+        padding: 50px 20px;
+    }
+    .membership-card-section .card-display {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    /* * {
+        outline: red solid 1px;
+    } */
 }

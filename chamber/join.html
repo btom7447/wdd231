@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 – Chamber of Commerce Project for Akwa Ibom">
+    <meta name="author" content="Benjamin Tom">
+    <meta property="og:title" content="WDD 231 - Benjamin Tom">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/favicon.png">
+    <meta property="og:url" content="https://btom7447.github.io/wdd231/directory.html">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="stylesheet" href="./styles/small.css">
+    <script src="./scripts/header.js" defer></script>
+    <script src="./scripts/hamburger.js" defer></script>
+    <script src="./scripts/getdates.js" defer></script>
+    <script src="./scripts/formModal.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/c21cfe5a09.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>WDD 231 - Benjamin Tom</title>
+</head>
+<body>
+    <main>
+        <header id="header">
+            <div class="company-div">
+                <img src="./images/logo.png" alt="Logo of Chamber of Commerce" class="logo">
+                <div>
+                    <h6>Akwa Ibom</h6>
+                    <p>Chamber of Commerce</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="#">Discover</a></li>
+                </ul>
+            </nav>
+            <img src="" alt="Profile of a user" class="user-profile">
+            <button id="hamburger-menu" aria-label="Toggle navigation">
+                <span class="hamburger-icon">&#9776;</span>
+            </button>
+        </header>
+
+        <section class="breadcrumb-section">
+            <h4>Join Us</h4>
+        </section>
+        
+        <section class="form-container">
+            <h4>Join Our Chamber of Commerce</h4>
+            <form action="thankyou.html" method="get">
+                <fieldset>
+                    <label for="first-name">First Name:
+                        <input type="text" id="first-name" name="first-name" required autocomplete="given-name" title="Enter your first name">
+                    </label>
+
+                    <label for="last-name">Last Name:
+                        <input type="text" id="last-name" name="last-name" required autocomplete="family-name" title="Enter your last name">
+                    </label>
+
+                    <label for="organization-title">Organizational Title:
+                        <input type="text" id="organization-title" name="organization-title" pattern="[A-Za-z-\s]{7,}" autocomplete="organization-title" title="Minimum 7 letters, only letters, hyphens, and spaces allowed">
+                    </label>
+
+                    <label for="email">Email Address:
+                        <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@email.com" title="Enter a valid email">
+                    </label>
+
+                    <label for="phone">Mobile Phone:
+                        <input type="tel" id="phone" name="phone" required autocomplete="tel" title="Enter your mobile number">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <label for="business-name">Business Name:
+                        <input type="text" id="business-name" name="business-name" required autocomplete="organization" title="Enter your business name">
+                    </label>
+
+                    <label for="membership">Membership Level:
+                        <select id="membership" name="membership">
+                            <option value="np">NP Membership (Free)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label for="description">Business Description:
+                        <textarea id="description" name="description" title="Describe your business"></textarea>
+                    </label>
+
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+                    <button type="submit">Submit</button>
+                </fieldset>
+
+                
+            </form>
+        </section>
+
+        <section class="membership-card-section">
+            <h4>Membership Levels</h4>
+            <div class="card-display">
+                <div class="card" onclick="openModal('np-modal')">
+                    <h3>NP Membership</h3>
+                    <p>Free membership for non-profits.</p>
+                    <button>More Info</button>
+                </div>
+                <div class="card" onclick="openModal('bronze-modal')">
+                    <h3>Bronze Membership</h3>
+                    <p>Basic benefits with event discounts.</p>
+                    <button>More Info</button>
+                </div>
+                <div class="card" onclick="openModal('silver-modal')">
+                    <h3>Silver Membership</h3>
+                    <p>Advertising and premium events.</p>
+                    <button>More Info</button>
+                </div>
+                <div class="card" onclick="openModal('gold-modal')">
+                    <h3>Gold Membership</h3>
+                    <p>All benefits, priority services.</p>
+                    <button>More Info</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Membership Level Modals -->
+        <dialog id="np-modal" hidden>
+            <h3>NP Membership</h3>
+            <p>Non-profits get free membership.</p>
+            <button onclick="closeModal('np-modal')">Close</button>
+        </dialog>
+
+        <dialog id="bronze-modal" hidden>
+            <h3>Bronze Membership</h3>
+            <p>Enjoy discounts on events.</p>
+            <button onclick="closeModal('bronze-modal')">Close</button>
+        </dialog>
+
+        <dialog id="silver-modal" hidden>
+            <h3>Silver Membership</h3>
+            <p>Includes advertising benefits.</p>
+            <button onclick="closeModal('silver-modal')">Close</button>
+        </dialog>
+
+        <dialog id="gold-modal" hidden>
+            <h3>Gold Membership</h3>
+            <p>All benefits, premium services.</p>
+            <button onclick="closeModal('gold-modal')">Close</button>
+        </dialog>
+        
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <h6>Akwa Ibom Chamber of Commerce</h6>
+            <ul>
+                <li>10 Ru De La Paix</li>
+                <li>Timbuktu, Mali 999</li>
+                <li>info@timbuktucc.org</li>
+                <li>(223) 55-2300</li>
+            </ul>
+        </div>
+        <div class="footer-socials">
+            <a href="#" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" target="_blank" aria-label="Twitter">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="#" target="_blank" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+        <div class="footer-right">
+            <ul>
+                <li>WDD231 Class Project</li>
+                <li>Benjamin Tom</li>
+                <li>&copy; 
+                    <span id="currentyear"></span>
+                    Akwa Ibom Chamber of Commerce
+                    <p id="lastModified"></p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
