@@ -116,6 +116,34 @@
         border-radius: 5px;
         max-width: 600px;
     }
+
+    /* DISCOVER PAGE */
+    .discover-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0px;
+        padding: 50px 20px;
+        max-width: 1400px;
+        margin: 0 auto;
+        background-color: var(--white);
+        position: relative;
+    }
+    .discover-container .gallery {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .discover-card:hover {
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        transform: translateY(-5px);
+    }
+    .discover-card:hover {
+        transform: none;
+    }
+    .discover-card img:hover {
+        transform: none;
+    }
+
+
     /* * {
         outline: red solid 1px;
     } */
