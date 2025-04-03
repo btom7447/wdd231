@@ -1,0 +1,50 @@
+[
+    {
+      "name": "Ibom Plaza",
+      "image": "images/ibom-plaza.webp",
+      "address": "Udo Udoma Ave, Uyo",
+      "description": "A beautiful shopping and entertainment complex in the heart of Uyo."
+    },
+    {
+      "name": "Godswill Akpabio Stadium",
+      "image": "images/stadium.webp",
+      "address": "Oron Road, Uyo",
+      "description": "State-of-the-art international stadium with 30,000 seating capacity."
+    },
+    {
+      "name": "Ibeno Beach",
+      "image": "images/ibeno-beach.webp",
+      "address": "Ibeno, Akwa Ibom",
+      "description": "Pristine sandy beach stretching over 30km along the Atlantic coast."
+    },
+    {
+      "name": "Ibom Tropicana",
+      "image": "images/tropicana.webp",
+      "address": "Oron Road, Uyo",
+      "description": "Entertainment complex featuring cinema, shopping mall, and amusement park."
+    },
+    {
+      "name": "National Museum",
+      "image": "images/museum.webp",
+      "address": "Ikot Ekpene Road, Uyo",
+      "description": "Showcasing the rich cultural heritage of Akwa Ibom and Nigeria."
+    },
+    {
+      "name": "Meridien Park",
+      "image": "images/meridien-park.webp",
+      "address": "Udo Udoma Ave, Uyo",
+      "description": "Beautiful green space perfect for relaxation and outdoor activities."
+    },
+    {
+      "name": "Akwa Ibom State University",
+      "image": "images/akwa-uni.webp",
+      "address": "Main Campus, Ikot Akpaden",
+      "description": "Premier state university with modern facilities and beautiful campus."
+    },
+    {
+      "name": "Ibom Icon Hotel",
+      "image": "images/icon-hotel.webp",
+      "address": "Nwaniba Road, Uyo",
+      "description": "Luxury hotel with world-class amenities and conference facilities."
+    }
+]

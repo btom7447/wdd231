@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease;
+}
+
+:root {
+    --white: #fff;
+    --p-background: #745332;
+    --s-background: #4C5154;
+    --highlight: #F1C40F;
+    --black: #000;
+    --ash: #d9d9d9;
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    line-height: 1.6;
+    color: var(--black);
+    background-color: var(--ash);
+}
+
+header {
+    background-color: var(--p-background);
+    color: var(--white);
+    padding: 2rem;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    color: var(--highlight);
+    margin: 0;
+}
+
+h2 {
+    color: var(--p-background);
+    border-bottom: 2px solid var(--highlight);
+    padding-bottom: 0.5rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--white);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.section {
+    margin-bottom: 3rem;
+}
+
+.purpose-list, .color-applications, .wireframe-list {
+    margin-left: 1.5rem;
+}
+
+.color-schema {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.color-box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.primary-color {
+    background-color: var(--p-background);
+    color: var(--white);
+}
+
+.secondary-color {
+    background-color: var(--s-background);
+    color: var(--white);
+}
+
+.accent-color {
+    background-color: var(--highlight);
+    color: var(--black);
+}
+
+.background-color {
+    background-color: var(--ash);
+    color: var(--black);
+}
+
+.white-color {
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid var(--ash);
+}
+
+.wireframe {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.wireframe-img {
+    background-color: var(--ash);
+    border: 1px solid var(--s-background);
+    padding: 1rem;
+    text-align: center;
+    min-height: 300px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.scenario {
+    background-color: var(--ash);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-left: 4px solid var(--highlight);
+}
+
+.scenario-question {
+    margin-bottom: 0.5rem;
+}
+
+.montserrat-example {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.figtree-example {
+    font-family: 'Figtree', sans-serif;
+}

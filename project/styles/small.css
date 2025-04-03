@@ -1,0 +1,45 @@
+@media screen and (max-width: 450px) {
+
+    :root {
+        --white: #fff;
+        --p-background: #745332;
+        --s-background: #4C5154;
+        --highlight: #F1C40F;
+        --black: #000;
+        --ash: #d9d9d9;
+    }
+    
+    .wireframe {
+        flex-direction: column;
+    }
+    
+    header {
+        padding: 1.5rem;
+    }
+    
+    .container {
+        padding: 1rem;
+    }
+    
+    .color-schema {
+        justify-content: center;
+    }
+    
+    .color-box {
+        width: 80px;
+        height: 80px;
+        font-size: 0.8rem;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+    
+    .wireframe-img {
+        min-height: 250px;
+    }
+}

@@ -87,6 +87,35 @@
     dialog {
         left: 50%;
     }
+
+    .gallery {
+        grid-area: gallery;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .sidebar {
+        grid-area: sidebar;
+    }
+    
+    .discover-card {
+        margin-bottom: 1rem;
+    }
+    
+    .discover-hero {
+        text-align: center;
+        padding: 1rem;
+        background-color: #f0f0f0;
+    }
+    
+    #visit-message {
+        background-color: #e8f4f8;
+        padding: 0.5rem;
+        margin: 1rem auto;
+        border-radius: 5px;
+        max-width: 600px;
+    }
     /* * {
         outline: red solid 1px;
     } */

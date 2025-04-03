@@ -731,6 +731,23 @@ dialog[open] {
     font-size: 16px;
     line-height: 40.4px;
 }
+.discover-container {
+    grid-template-columns: 1fr 3fr;
+}
+
+.gallery {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.discover-container {
+    display: grid;
+    grid-template-areas: 
+        "sidebar"
+        "gallery";
+    gap: 1rem;
+    padding: 1rem;
+}
+
 
 /* * {
     outline: red solid 1px;

@@ -13,9 +13,8 @@
     <link rel="stylesheet" href="./styles/small.css">
     <script src="./scripts/header.js" defer></script>
     <script src="./scripts/hamburger.js" defer></script>
+    <script src="./scripts/discover.js" defer></script>
     <script src="./scripts/getdates.js" defer></script>
-    <script src="./scripts/directory.js" defer></script>
-    <script src="./scripts/weather.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/c21cfe5a09.js" crossorigin="anonymous"></script>
@@ -45,56 +44,19 @@
                 <span class="hamburger-icon">&#9776;</span>
             </button>
         </header>
-        <section class="hero-section">
-            <button type="button" class="keynote-btn">
-                Keynote Tickets
-            </button>
-        </section>
-        <section class="home-section">
-            <h4 class="title">Home</h4>
-            <div class="home-top">
-                <!-- Event Card -->
-                <div class="home-card events">
-                    <div class="card-header">
-                        <h6>Events</h6>
-                    </div>
-                    <div class="card-content">
-
-                    </div>
-                </div>
-               <!-- Current Weather Card -->
-                <div class="home-card current-weather">
-                    <div class="card-header">
-                        <h6>Current Weather</h6>
-                    </div>
-                    <div class="card-content">
-                        <div class="forecast-item">
-                            <div id="weather-icon"></div>
-                            <p id="temperature"></p>
-                            <p id="weather-description"></p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Weather Forecast Card -->
-                <div class="home-card forecast">
-                    <div class="card-header">
-                        <h6>Weather Forecast</h6>
-                    </div>
-                    <div class="card-content" id="forecast-container">
-                        <!-- Forecast data will be inserted here -->
-                    </div>
-                </div>
+        <section class="discover-container">
+            <div class="sidebar">
+                <h3>Demographics</h3>
+                <p>Akwa Ibom State has a population of over 5 million people, with Uyo as its capital.</p>
+                <h3>Economy</h3>
+                <p>The state is rich in oil and gas resources, agriculture, and growing tourism sector.</p>
+                <h3>Culture</h3>
+                <p>Home to diverse ethnic groups with rich cultural heritage and festivals.</p>
             </div>
-            <div class="view-toggle">
-                <button id="grid-view-btn" title="Grid View">
-                    <i class="fas fa-th-large"></i> 
-                </button>
-                <button id="list-view-btn" title="List View">
-                    <i class="fas fa-list"></i> 
-                </button>
+            
+            <div class="gallery" id="attractions-gallery">
+                <!-- Cards will be inserted here by JavaScript -->
             </div>
-            <div class="member-card-container" id="member-container"></div>
         </section>
     </main>
     <footer>

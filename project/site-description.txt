@@ -1,0 +1,15 @@
+Subject:  Abkon Space Website
+
+Planned Website Subject: Abkon Space - A Workspace Hub Website
+
+Planned Content:
+
+- Homepage: Introduction to the workspace hub, highlighting its amenities and services
+- About Us: Overview of the hub's mission, values, and team
+- Services: Detailed description of the hub's offerings, including private offices, co-working spaces, meeting rooms, and events
+- Membership: Information on membership plans, pricing, and benefits
+- Events: Calendar of upcoming events, workshops, and conferences
+
+Reason for Choosing this Subject:
+
+I chose to develop a workspace hub website because I frequently use the services of a local workspace hub that currently lacks an online presence. By creating a website for this hub, I aim to provide a platform for them to showcase their services, attract new members, and enhance their overall visibility. This project will allow me to apply my web development skills to a real-world problem, while also supporting a business that I believe in.
