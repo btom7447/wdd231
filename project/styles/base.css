@@ -204,7 +204,59 @@ footer .footer-bottom > div a {
     font-size: 20px;
 }
 
- 
+/* BREADCRUMB SECTION */
+.breadcrumb-section {
+    padding: 20px;
+    height: 50dvh;
+    width: 100%;
+    background-image: url('../images/breadcrumb.png');
+    object-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.breadcrumb-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 0;
+}
+.breadcrumb-section > * {
+    position: relative;
+    z-index: 2;
+}
+.breadcrumb-section h2 {
+    font-weight: 500;
+    font-size: 45px;
+    font-family: 'Figtree', sans-serif;
+    text-align: center;
+    color: var(--white);
+}
+.breadcrumb-section > div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.breadcrumb-section > div span {
+    color: var(--white);
+    font-size: 20px;
+}
+.breadcrumb-section > div h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24.4px;
+    color: var(--white);
+}
+
 /* HERO SECTION */
 .hero-section {
     position: relative;
