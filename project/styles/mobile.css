@@ -1,0 +1,215 @@
+@media screen and (max-width: 450px) {
+    
+    :root {
+        --white: #fff;
+        --p-background: #243c74;
+        --s-background: #4C5154;
+        --highlight: #F1C40F;
+        --beige: #fdf5ea;
+        --black: #000;
+        --ash: #d9d9d9;
+    }
+
+    /* HEADER */
+    header {
+        padding: 10px 20px;
+        position: relative; 
+    }
+    header h5 {
+        font-weight: 600;
+        font-size: 22px;
+        font-family: 'Figtree', sans-serif;
+        line-height: 70px;
+        color: var(--p-background);
+        display: block;
+    }
+    header nav {
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        padding: 40px;
+        display: none; 
+        flex-direction: column;
+        align-items: start;
+        justify-content: stretch;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: var(--white) !important;
+        z-index: 1000; 
+    }
+    header nav.open {
+        display: flex; 
+    }
+    
+    /* HAMBURGER MENU */
+    #hamburger-menu {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+    }
+    header #hamburger-menu span {
+        font-size: 22px;
+        color: var(--p-background);
+    }
+    
+    header nav ul {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 15px;
+    }
+
+    /* FOOTER  */
+    footer .footer-top {
+        grid-template-columns: 1fr;
+    }
+    footer .footer-bottom {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* HERO SECTION */
+    .hero-section {
+        height: fit-content;
+        grid-template-columns: 1fr;
+    }
+    .hero-section .hero-caption {
+        order: 2;
+        padding: 20px;
+    }
+    .hero-section .hero-caption h1 {
+        font-size: 25px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    .hero-section .hero-caption p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    /* AMENTITIES SECTION */
+    .amenities-section {
+        padding: 50px 20px;
+        gap: 20px;
+    }
+
+    /* WHY CHOOSE USE SECTION */
+    .why-us-section {
+        padding: 50px 0px;
+        padding-top: 0;
+        gap: 40px;
+        grid-template-columns: 1fr;
+    }
+    .why-us-section .why-us-figure {
+        position: relative;
+        height: 50dvh;
+    }
+    .why-us-section .why-us-figure .why-tag {
+        bottom: -20px;
+        right: 0px;
+        padding: 10px;
+        width: 150px;
+        height: 150px;
+        transform: translate(0%, 40%);
+    }
+    .why-us-section .why-tag h3 {
+        font-size: 20px;
+    }
+    .why-us-section .why-tag p {
+        font-size: 12px;
+    }
+    .why-us-section .why-us-caption {
+        padding: 0px 20px;
+    }
+    .why-us-section .why-us-caption h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .why-us-section .why-us-caption p {
+        font-size: 14px;
+    }
+
+    /* AMENITIES GALLERY SECTION */
+    .amenities-gallery-section { 
+        padding: 50px 20px;
+    }
+    .amenities-gallery-section .amenities-gallery-caption h2 {
+        font-size: 40px;
+    }
+    .amenities-gallery-section .amenities-gallery-caption p {
+        font-size: 14px;
+    }
+    .amenities-gallery-section .amenities-gallery-caption hr {
+        width: 100px;
+        height: 1px;
+    }
+    .amenities-gallery .amenity-card img {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* MEMBERSHIP SECTION */
+    .membership-section {
+        padding: 50px 20px;
+    }
+    .membership-section .membership-section-caption {
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .membership-section .membership-section-caption h2 {
+        font-size: 40px;
+    }
+    .membership-section .membership-section-caption p {
+        font-size: 14px;
+    }
+    .membership-section .membership-section-caption hr {
+        width: 100px;
+        height: 1px;
+    }
+    .membership-section .membership-container {
+        grid-template-columns: 1fr;
+    }
+    .membership-section .membership-card {
+        padding: 20px;
+        height: fit-content;
+        padding-bottom: 100px;
+    }
+    .membership-section .membership-card::after {
+        content: '';
+        flex-grow: unset;
+    }
+    .membership-section .membership-card .purchase-now {
+        bottom: 40px;
+        width: calc(100% - 40px);
+    }
+
+    /* TESTIMONIAL SECTION */
+    .testimonial-section {
+        padding: 50px 20px;
+    }
+    .testimonial-section .testimonial-section-caption {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .testimonial-section .testimonial-section-caption h2 {
+        font-size: 40px;
+    }
+    .testimonial-section .carousel-buttons button { 
+        padding: 15px 30px;
+    }
+    .testimonial-section .carousel-container {
+        max-width: 100%; 
+    }
+    .testimonial-section .testimonial-card {
+        flex: 0 0 calc(100% - 20px); 
+    }
+
+
+
+    /* * {
+        outline: red solid 1px;
+    } */
+}

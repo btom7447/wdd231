@@ -1,0 +1,40 @@
+[
+    {
+        "title": "Virtual Mailbox",
+        "offer": "Perfect for remote workers and digital nomads",
+        "price": 0,
+        "offer_list": [
+            "Professional business address",
+            "Mail scanning & forwarding",
+            "Access to member network events",
+            "Discounted day passes (₦5,000/day)"
+        ]
+    },
+    {
+        "title": "Open Space",
+        "offer": "Flexible coworking in our vibrant shared space",
+        "price": 40000,
+        "offer_list": [
+            "24/7 access to open workspace",
+            "High-speed internet (100Mbps)",
+            "Free coffee & tea",
+            "Meeting room credits (2hrs/month)",
+            "Printing allowance (50 pages/month)",
+            "Lockable storage drawer"
+        ]
+    },
+    {
+        "title": "Private Office",
+        "offer": "Your dedicated professional workspace",
+        "price": 60000,
+        "offer_list": [
+            "Private locked office (1-4 people)",
+            "24/7 secure access",
+            "All Open Space benefits",
+            "Meeting room credits (4hrs/month)",
+            "Printing allowance (100 pages/month)",
+            "Personalized signage",
+            "2 free guest passes/month"
+        ]
+    }
+]

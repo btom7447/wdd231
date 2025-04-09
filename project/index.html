@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 – Project - Abkon Space is a co-working space that offers private offices, coworking spaces, and day office rentals.">
+    <meta name="author" content="Benjamin Tom">
+    <meta property="og:title" content="WDD 231 - Benjamin Tom">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/favicon.png">
+    <meta property="og:url" content="https://btom7447.github.io/wdd231/project/index.html">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <script src="./scripts/hamburger.js" defer></script>
+    <script src="./scripts/amenities.js" defer></script>
+    <script src="./scripts/testimonials.js" defer></script>
+    <script src="./scripts/membership.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/c21cfe5a09.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Abkon Space</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="./images/abkon-logo.png" alt="Logo of Abkon Space">
+        </a>
+        <h5>Abkon Space</h5>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="services.html">Services</a>
+                </li>
+                <li>
+                    <a href="membership.html">Membership</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <button type="button" class="get-in-touch">
+                Get In Touch 
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+            </button>
+        </nav>
+
+        <button id="hamburger-menu" aria-label="Toggle navigation" class="hamburger-button" aria-expanded="false">
+            <span id="menu-icon">&#9776;</span>
+        </button>
+    </header>
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero-section">
+            <div class="hero-caption">
+                <h1>
+                    Welcome to Abkon Space! <br>
+                    Your Gateway to the Universe of Knowledge and Innovation.
+                </h1>
+                <p>
+                    Private offices, coworking space and day office rentals just for you!
+                </p>
+                <a href="membership.html">
+                    <button type="button" class="get-started">
+                        Get Started 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                    </button>
+                </a>
+            </div>
+            <div class="hero-figure">
+                <img src="./images/hero-section.png" alt="Picture of an empty co work space">
+            </div>
+        </section>
+
+        <!-- AMENITIES SECTION -->
+        <section class="amenities-section">
+            <div class="amenity-card">
+                <div class="amenity-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wifi-icon lucide-wifi"><path d="M12 20h.01"/><path d="M2 8.82a15 15 0 0 1 20 0"/><path d="M5 12.859a10 10 0 0 1 14 0"/><path d="M8.5 16.429a5 5 0 0 1 7 0"/></svg>
+                </div>
+                <h5>High Speed Internet</h5>
+                <p>
+                    Stay productive and connected with high-speed internet, ensuring fast and reliable connectivity for seamless communication, data transfer, and online collaboration.
+                </p>
+            </div>
+            <div class="amenity-card">
+                <div class="amenity-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chef-hat-icon lucide-chef-hat"><path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"/><path d="M6 17h12"/></svg>
+                </div>
+                <h5>Fully Equipped Kitchen</h5>
+                <p>
+                    Enjoy a fully equipped kitchen with modern appliances, ample counter space, and utensils to make meal prep and client entertaining a breeze.
+                </p>
+            </div>
+            <div class="amenity-card">
+                <div class="amenity-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-parking-icon lucide-square-parking"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></svg>
+                </div>
+                <h5>Huge Parking Space</h5>
+                <p>
+                    Take advantage of our huge parking space, offering ample spots for you and your team to park safely and conveniently.
+                </p>
+            </div>
+            <div class="amenity-card">
+                <div class="amenity-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-orbit-icon lucide-orbit"><circle cx="12" cy="12" r="3"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><path d="M10.4 21.9a10 10 0 0 0 9.941-15.416"/><path d="M13.5 2.1a10 10 0 0 0-9.841 15.416"/></svg>
+                </div>
+                <h5>Fully Custom Spaces</h5>
+                <p>
+                    Tailor your workspace to fit your brand and style with our fully custom spaces, designed to adapt to your unique needs and workflow.                </p>
+            </div>
+        </section>
+
+        <!-- WHY CHOOSE USE SECTION -->
+        <section class="why-us-section">
+            <div class="why-us-figure">
+                <div class="why-tag">
+                    <h3>50+</h3>
+                    <p>Conference & meeting rooms available</p>
+                </div>
+                <img src="./images/why-choose-us.png" alt="Picture of an conference room">
+            </div>
+            <div class="why-us-caption">
+                <h2>Why Choose Abkon Space</h2>
+                <p>
+                    At Abkon Space, we understand that a productive workspace is essential for success. That's why we offer a range of amenities designed to enhance your work experience. Whether you're a freelancer, entrepreneur, or part of a larger team, our flexible office solutions provide the perfect environment for collaboration and innovation.
+                </p>
+                <ul>
+                    <li>Unbeatable Prices</li>
+                    <li>Exceptional Customer Service</li>
+                    <li>Wide Range of Products</li>
+                    <li>Quality Guarantee</li>
+                    <li>Expert Advice & Support</li>
+                </ul>
+                <a href="services.html">
+                    <button type="button" class="contact-us">
+                        Join Us
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                    </button>
+                </a>
+            </div>
+        </section>
+        
+        <!-- AMENITIES GALLERY -->
+        <section class="amenities-gallery-section">
+            <div class="amenities-gallery-caption">
+                <h2>
+                    Glimpse of What We Offer
+                </h2>
+                <hr>
+                <p>
+                    Explore our amenities and see how we can help you achieve your goals. Our spaces are designed to inspire creativity, foster collaboration, and provide the tools you need to succeed.
+                </p>
+            </div>
+            <div id="amenityContainer" class="amenities-gallery"></div>
+        </section>
+
+        <!-- TESTIMONIAL SECTION -->
+        <section class="testimonial-section">
+            <div class="testimonial-section-caption">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <div class="carousel-buttons">
+                    <button class="carousel-arrow prev" aria-label="Previous testimonial">&#10094;</button>
+                    <button class="carousel-arrow next" aria-label="Next testimonial">&#10095;</button>
+                </div>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel-track"></div>
+            </div>
+        </section>
+        <!-- Membership Section -->
+        <section class="membership-section">
+            <div class="membership-section-caption">
+                <h2>
+                    Our spaces can help you stay productive
+                </h2>
+                <hr>
+                <p>
+                    We're the state's largest provider of flexible workspace solutions, with customers including some of the most successful entrepreneurs. 
+                </p>
+            </div>
+            <div id="membershipContainer" class="membership-container"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="f-text">
+                <img src="./images/abkon-logo.png" alt="logo of abkon space">
+                <p>
+                    Abkon Space! Your Gateway to the Universe of Knowledge and Innovation
+                </p>
+                <span>
+                    needhelp@abkon-space.com
+                </span>
+                <span>
+                    +234 912 3456
+                </span>
+            </div>
+            <div class="f-links">
+                <h5>Company</h5>
+                <ul>
+                    <li>
+                        <a href="about.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Our Services</a>
+                    </li>
+                    <li>
+                        <a href="membership.html">Membership</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="f-links">
+                <h5>Explore</h5>
+                <ul>
+                    <li>
+                        <a href="#">Terms & Conditions</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#">Help & Support</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="f-links">
+                <h5>Socials</h5>
+                <ul>
+                    <li>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </span> +234 912 3456
+                    </li>
+                    <li>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        </span> needhelp@abkon-space.com
+                    </li>
+                    <li>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pinned-icon lucide-map-pinned"><path d="M18 8c0 3.613-3.869 7.429-5.393 8.795a1 1 0 0 1-1.214 0C9.87 15.429 6 11.613 6 8a6 6 0 0 1 12 0"/><circle cx="12" cy="8" r="2"/><path d="M8.714 14h-3.71a1 1 0 0 0-.948.683l-2.004 6A1 1 0 0 0 3 22h18a1 1 0 0 0 .948-1.316l-2-6a1 1 0 0 0-.949-.684h-3.712"/></svg>
+                        </span> 22 Aba Road, AKS, Nigeria
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Abkon Space. All rights reserved.</p>
+            <div class="social-media">
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook-icon lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                </a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter-icon lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                </a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>

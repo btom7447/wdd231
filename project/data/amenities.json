@@ -1,0 +1,22 @@
+[
+    {
+        "title": "High Speed Internet",
+        "description": "Stay productive and connected with high-speed internet, ensuring fast and reliable connectivity for seamless communication, data transfer, and online collaboration.",
+        "image": "high-speed-internet.png"
+    },
+    {
+        "title": "Fully Equipped Kitchen",
+        "description": "Enjoy a fully equipped kitchen with modern appliances, ample counter space, and utensils to make meal prep and client entertaining a breeze.",
+        "image": "fully-equipped-kitchen.png"
+    },
+    {
+        "title": "Huge Parking Space",
+        "description": "Take advantage of our huge parking space, offering ample spots for you and your team to park safely and conveniently.",
+        "image": "huge-parking-space.png"
+    },
+    {
+        "title": "Fully Custom Spaces",
+        "description": "Tailor your workspace to fit your brand and style with our fully custom spaces, designed to adapt to your unique needs and workflow.",
+        "image": "fully-custom-spaces.png"
+    }
+]
