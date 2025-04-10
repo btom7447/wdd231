@@ -217,6 +217,39 @@
         height: 50dvh;
     }
 
+    /* EXPLORE SECTION  */
+    .explore-section {
+        padding: 50px 20px 0px 20px;
+    }
+    .explore-section .explore-section-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .explore-section .explore-section-figure {
+        position: relative;
+        height: 50dvh;
+    }
+    .explore-section .explore-section-figure .explore-figure-one {
+        width: 80%;
+    }
+    .explore-section .explore-section-figure .explore-figure-two {
+        width: 80%;
+    }
+    .explore-section .explore-section-caption h2 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .explore-section .explore-section-caption p {
+        margin-bottom: 10px;
+    }
+    .explore-section .odometer-container {
+        margin-bottom: 20px;
+    }
+    .explore-section .odometer h3 {
+        font-size: 45px;
+    }
+
+
 
     /* * {
         outline: red solid 1px;
