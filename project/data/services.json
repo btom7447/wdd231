@@ -1,0 +1,71 @@
+[
+    {
+        "id": "coworking",
+        "title": "Coworking Spaces",
+        "description": [
+            "At Abkon Space, our coworking spaces are designed to inspire creativity and productivity. With comfortable seating, high-speed internet, and access to amenities, you'll have everything you need to stay focused and get work done. Whether you're a freelancer, entrepreneur, or remote worker, our coworking spaces offer a flexible and affordable solution for your workspace needs.",
+            "Our coworking spaces are more than just a desk – they're a community. Join our vibrant community of like-minded professionals and benefit from networking opportunities, workshops, and events. Our spaces are designed to foster collaboration and innovation, helping you to grow your business and achieve your goals.", 
+            "From hot desks to dedicated desks, we offer a range of coworking options to suit your needs. Choose from flexible membership plans and enjoy access to our facilities 24/7. With Abkon Space, you'll never be alone – you'll be part of a thriving community that's dedicated to helping you succeed." 
+        ],
+        "details": "Our coworking spaces are designed to foster collaboration and productivity with comfortable seating, high-speed internet, and meeting rooms.",
+        "features": [
+            "24/7 access",
+            "High-speed internet",
+            "Meeting room credits",
+            "Free coffee & tea",
+            "Community events"
+        ],
+        "image": "coworking-space-image.png"
+    },
+    {
+        "id": "private-offices",
+        "title": "Private Offices",
+        "description": [
+            "Take your business to the next level with our private offices at Abkon Space. Our offices are designed to provide a professional and private workspace for businesses of all sizes. With secure access, high-speed internet, and access to amenities, you'll have everything you need to run your business efficiently.",
+            "Our private offices offer a range of benefits, including increased productivity, improved focus, and enhanced professionalism. With flexible lease terms and customizable office solutions, you can create a workspace that suits your unique needs and budget. Plus, you'll have access to our community of like-minded professionals and benefit from networking opportunities.", 
+            "Whether you're a growing business or an established company, our private offices at Abkon Space offer a prestigious address and a professional environment. Enjoy the benefits of a private office without the long-term commitment or high overheads. With Abkon Space, you can focus on what matters most – growing your business." 
+        ],
+        "details": "Fully furnished private offices with customizable layouts to suit your business needs.",
+        "features": [
+            "Customizable layouts",
+            "Lockable doors",
+            "Mail handling",
+            "Reception services",
+            "IT support"
+        ],
+        "image": "private-office-image.png"
+    },
+    {
+        "id": "meeting-rooms",
+        "title": "Meeting Rooms",
+        "description": [
+            "Host your next meeting or presentation in style with our meeting rooms at Abkon Space. Our rooms are equipped with state-of-the-art technology, including high-speed internet, projectors, and whiteboards. With comfortable seating and stylish decor, our meeting rooms provide the perfect environment for productive meetings and successful presentations.",
+            "Our meeting rooms are available for hourly hire, making them an affordable solution for businesses of all sizes. Whether you need to host a team meeting, client presentation, or workshop, our rooms are designed to accommodate your needs. With flexible booking options and competitive pricing, you can book a meeting room with confidence.", 
+            "From small team meetings to large presentations, our meeting rooms at Abkon Space offer the perfect space to collaborate, innovate, and succeed. Enjoy access to our amenities and services, including catering and administrative support. With Abkon Space, you can host meetings that impress and inspire." 
+        ],
+        "details": "Equipped with modern presentation tools and video conferencing capabilities.",
+        "features": [
+            "High-speed internet",
+            "Video conferencing tools",
+            "Whiteboards and projectors",
+            "Flexible booking options"
+        ],
+        "image": "meeting-rooms.png"
+    },
+    {
+        "id": "virtual-office",
+        "title": "Virtual Office",
+        "description": [
+            "Establish a professional presence for your business with our virtual office services at Abkon Space. Our virtual office solutions provide a prestigious business address, mail handling services, and phone answering services. With our virtual office, you can project a professional image and build trust with your clients and customers.",
+            "Our virtual office services are designed to support businesses of all sizes, from solo entrepreneurs to established companies. Enjoy the benefits of a virtual office, including reduced overheads, increased flexibility, and improved work-life balance. With Abkon Space, you can focus on growing your business without the burden of a physical office space.",
+            "Whether you're a remote worker, freelancer, or small business owner, our virtual office services at Abkon Space offer a range of benefits. Enjoy access to our meeting rooms and coworking spaces on a pay-as-you-go basis, and benefit from our community of like-minded professionals. With Abkon Space, you can build a successful business with confidence." 
+        ],
+        "features": [
+            "Business address",
+            "Mail scanning & forwarding",
+            "Phone answering",
+            "Occasional workspace access"
+        ],
+        "image": "virtual-rooms.png"
+    }
+]

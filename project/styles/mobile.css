@@ -70,6 +70,15 @@
         gap: 10px;
     }
 
+    .breadcrumb-section > div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        align-items: center;
+    }
+
     /* HERO SECTION */
     .hero-section {
         height: fit-content;
@@ -249,9 +258,22 @@
         font-size: 45px;
     }
 
+    /* SERVICES TAB DISPLAY */
+    .services-display-tab .services-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .services-display-tab .services-nav {
+        width: 100%;
+        flex: 1;
+        position: unset;
+    }
+    .services-display-tab .services-content img {
+        height: 300px;
+    }
+    .services-display-tab .services-content h2 {
+        font-size: 40px;
+    }
 
 
-    /* * {
-        outline: red solid 1px;
-    } */
 }
