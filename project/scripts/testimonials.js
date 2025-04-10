@@ -1,17 +1,14 @@
-// DOM Elements
 const track = document.querySelector('.carousel-track');
 const prevBtn = document.querySelector('.carousel-buttons .prev');
 const nextBtn = document.querySelector('.carousel-buttons .next');
 let currentIndex = 0;
 let testimonials = [];
-let cardsPerView = 2; // Default number of visible cards
+let cardsPerView = 2; 
 
-// Set number of cards based on screen size
 function setCardsPerView() {
     cardsPerView = window.innerWidth <= 1024 ? 1 : 2;
 }
 
-// Fetch testimonials from JSON file
 async function fetchTestimonials() {
     try {
         const response = await fetch('./data/testimonials.json');
@@ -27,7 +24,6 @@ async function fetchTestimonials() {
     }
 }
 
-// Create testimonial cards
 function createTestimonialCards() {
     track.innerHTML = '';
     testimonials.forEach(testimonial => {
@@ -49,13 +45,11 @@ function createTestimonialCards() {
     });
 }
 
-// Update carousel position
 function updateCarousel() {
     const cardWidth = 100 / cardsPerView;
     track.style.transform = `translateX(-${currentIndex * cardWidth}%)`;
 }
 
-// Navigation functions
 function goToPrev() {
     currentIndex = Math.max(currentIndex - 1, 0);
     updateCarousel();
@@ -69,22 +63,19 @@ function goToNext() {
     toggleNavButtons();
 }
 
-// Toggle navigation buttons
 function toggleNavButtons() {
     prevBtn.disabled = currentIndex === 0;
     nextBtn.disabled = currentIndex >= Math.ceil(testimonials.length / cardsPerView) - 1;
 }
 
-// Initialize carousel
 async function initCarousel() {
     setCardsPerView();
     window.addEventListener('resize', () => {
         const oldCardsPerView = cardsPerView;
         setCardsPerView();
         
-        // Only update if view changed
         if (oldCardsPerView !== cardsPerView) {
-            currentIndex = 0; // Reset to first slide
+            currentIndex = 0; 
             updateCarousel();
             toggleNavButtons();
         }
@@ -97,7 +88,6 @@ async function initCarousel() {
     toggleNavButtons();
 }
 
-// Event listeners
 prevBtn.addEventListener('click', goToPrev);
 nextBtn.addEventListener('click', goToNext);
 document.addEventListener('keydown', (e) => {
@@ -105,5 +95,4 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowRight') goToNext();
 });
 
-// Initialize
 document.addEventListener('DOMContentLoaded', initCarousel);

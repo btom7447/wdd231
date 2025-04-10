@@ -207,6 +207,15 @@
         flex: 0 0 calc(100% - 20px); 
     }
 
+    /* CONTACT FORM SECTION */
+    .contact-form-section {
+        padding: 50px 20px;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .map-section {
+        height: 50dvh;
+    }
 
 
     /* * {
