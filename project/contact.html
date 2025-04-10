@@ -17,6 +17,7 @@
     <script src="./scripts/testimonials.js" defer></script>
     <script src="./scripts/membership.js" defer></script>
     <script src="./scripts/leafletMap.js" defer></script>
+    <script src="./scripts/thankYou.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/c21cfe5a09.js" crossorigin="anonymous"></script>
@@ -145,14 +146,14 @@
             <form id="contactForm" method="get" action="message.html" class="contact-form">
                 <h2>Send a message</h2>
                 <div class="form-group">
-                    <input type="text" name="name" id="name" placeholder="Name">
-                    <input type="email" name="email" id="email" placeholder="Email">
-                    <input type="tel" name="phone" id="phone" placeholder="Phone">
-                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                    <input type="text" name="name" id="name" placeholder="Name" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <input type="tel" name="phone" id="phone" placeholder="Phone" required>
+                    <input type="text" name="subject" id="subject" placeholder="Subject" required>
                 </div>
                 <textarea name="message" id="message" placeholder="How an we help you? Feel free to get in touch!"></textarea>
                 <label for="terms">
-                    <input type="checkbox" name="terms" id="terms">
+                    <input type="checkbox" name="terms" id="terms" required>
                     I agree with to the terms and conditions
                 </label>
                 <button type="submit">
