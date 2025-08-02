@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function () {
     if (contactForm) {
         contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
-            sessionStorage.setItem('formType', 'contact');
+            localStorage.setItem('formType', 'contact');
             const formData = new FormData(this);
-            sessionStorage.setItem('formData', JSON.stringify(Object.fromEntries(formData)));
+            localStorage.setItem('formData', JSON.stringify(Object.fromEntries(formData)));
             this.submit();
         });
     }
@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
     if (signupForm) {
         signupForm.addEventListener('submit', function (e) {
             e.preventDefault();
-            sessionStorage.setItem('formType', 'signup');
+            localStorage.setItem('formType', 'signup');
             const formData = new FormData(this);
-            sessionStorage.setItem('formData', JSON.stringify(Object.fromEntries(formData)));
+            localStorage.setItem('formData', JSON.stringify(Object.fromEntries(formData)));
             this.submit();
         });
     }
@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const thankYouDetails = document.getElementById('thankYouDetails');
 
     if (thankYouMessage && thankYouDetails) {
-        const formType = sessionStorage.getItem('formType');
-        const formData = sessionStorage.getItem('formData');
+        const formType = localStorage.getItem('formType');
+        const formData = localStorage.getItem('formData');
         const parsedData = formData ? JSON.parse(formData) : null;
 
         if (formType === 'contact') {
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
             `;
         }
 
-        sessionStorage.removeItem('formType');
-        sessionStorage.removeItem('formData');
+        localStorage.removeItem('formType');
+        localStorage.removeItem('formData');
     }
 });
